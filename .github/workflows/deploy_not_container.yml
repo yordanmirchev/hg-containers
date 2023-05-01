@@ -23,7 +23,7 @@ jobs:
       mongoDb: #label is up to us 
         image: mongo #we need to start with an image, as the service is in a container
         ports:
-          - 27017:27017 : we forward the service port to the port on the runner machine
+          - 27017:27017 #we forward the service port to the port on the runner machine
         env: # dependiong on the iammge additional env settings is provided
           MONGO_INITDB_ROOT_USERNAME: root
           MONGO_INITDB_ROOT_PASSWORD: example          
