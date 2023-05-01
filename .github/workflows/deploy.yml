@@ -15,7 +15,7 @@ jobs:
       image: node:16
     env:
       MONGODB_CONNECTION_PROTOCOL: mongodb # this is set according to the image requirments 
-      MONGODB_CLUSTER_ADDRESS:  mongoDb: #this is the same as the label of the service 
+      MONGODB_CLUSTER_ADDRESS: mongoDb #this is the same as the label of the service 
       MONGODB_USERNAME: root # the same as the one in the service image
       MONGODB_PASSWORD: example # the same as the one in the service image
       PORT: 8080
